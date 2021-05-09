@@ -14,6 +14,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'bkad/CamelCaseMotion'
 Plug 'tpope/vim-surround'
 Plug 'andymass/vim-matchup'
+Plug 'rstacruz/vim-closer'
 
 " Text objects
 Plug 'kana/vim-textobj-user'
