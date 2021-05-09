@@ -32,9 +32,10 @@ Plug 'tpope/vim-commentary'
 Plug 'editorconfig/editorconfig-vim'
 
 " LSP and syntactic language support
-" TODO: migrate to nvim bundled lsp and treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-textobjects'
+" TODO: migrate to nvim bundled lsp
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'sheerun/vim-polyglot'
 
 " Markup and config
 Plug 'godlygeek/tabular'
@@ -105,6 +106,32 @@ let g:python3_host_prog = '~/.pyenv/versions/neovim3/bin/python'
 " ================
 " # Plugin config
 " ================
+" nvim-treesitter
+lua <<EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = {"bash", "c", "c_sharp", "cpp", "css", "go", "gomod", "html",
+                      "java", "javascript", "json", "jsonc", "python", "rust",
+                      "toml", "tsx", "typescript", "vue", "yaml"},
+  ignore_install = {},
+  highlight = {
+    enable = true,
+    disable = {},
+  },
+  incremental_selection = {
+    enable = true,
+    keymaps = {
+      init_selection = "gnn",
+      node_incremental = "grn",
+      scope_incremental = "grc",
+      node_decremental = "grm",
+    },
+  },
+  indent = {
+    enable = true
+  },
+}
+EOF
+
 " Nvim-colorizer.lua
 lua require'colorizer'.setup()
 
