@@ -41,7 +41,7 @@ Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 " Markup and config
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
-Plug 'cespare/vim-toml'
+"Plug 'cespare/vim-toml'
 
 call plug#end()
 
