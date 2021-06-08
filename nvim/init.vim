@@ -54,8 +54,8 @@ filetype plugin indent on
 set autoindent
 set expandtab
 set smarttab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 
 " UI & system
 set encoding=utf-8
@@ -524,8 +524,5 @@ nnoremap <leader>, :set invlist<cr>
 " autocmd! CompleteDone * if pumvisible() == 0 | pclose | endif
 
 " Change settings for specific language
-autocmd FileType javacript setlocal sw=2 sts=2
-autocmd FileType yaml setlocal sw=2 sts=2
-autocmd FileType json setlocal sw=2 sts=2
 autocmd FileType json syntax match Comment +\/\/.\+$+
 autocmd FileType go setlocal ts=4 noet sts=0
