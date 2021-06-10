@@ -14,7 +14,6 @@ Plug 'easymotion/vim-easymotion'
 Plug 'bkad/CamelCaseMotion'
 Plug 'tpope/vim-surround'
 Plug 'andymass/vim-matchup'
-Plug 'rstacruz/vim-closer'
 
 " Text objects
 Plug 'kana/vim-textobj-user'
@@ -526,3 +525,4 @@ nnoremap <leader>, :set invlist<cr>
 " Change settings for specific language
 autocmd FileType json syntax match Comment +\/\/.\+$+
 autocmd FileType go setlocal ts=4 noet sts=0
+autocmd FileType cpp setlocal commentstring=//\ %s
