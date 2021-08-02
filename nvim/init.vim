@@ -65,7 +65,6 @@ set colorcolumn=80
 set ruler
 set laststatus=2
 set noshowmode
-set nowrap
 set sidescroll=1
 set showcmd
 set showmatch
