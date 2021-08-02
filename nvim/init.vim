@@ -527,3 +527,4 @@ autocmd FileType json syntax match Comment +\/\/.\+$+
 autocmd FileType go setlocal ts=4 noet sts=0
 autocmd FileType cpp setlocal commentstring=//\ %s
 autocmd FileType rust setlocal sw=4 sts=4
+autocmd FileType gitcommit setlocal colorcolumn=50,72
