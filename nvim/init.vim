@@ -512,6 +512,10 @@ nnoremap <leader>- :sp<space>
 " Toggle hidden characters display
 nnoremap <leader>, :set invlist<cr>
 
+" diff mapping
+nnoremap <leader>dof :diffget //2<CR>
+nnoremap <leader>doj :diffget //3<CR>
+
 " ===============
 " # Autocommands
 " ===============
